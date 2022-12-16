@@ -45,7 +45,7 @@ ggplot(carolina, aes(x = treatment, y = germination, fill = treatment)) +
   scale_y_continuous(limits = c(0, 10), breaks = seq(from = 0, to = 10, by = 2)) +
   theme_classic(base_size = 16) 
 
-# black beans data
+#black beans data
 treatment <- factor(c(rep("Control", 5), rep("scarication", 5))) 
 germination <- c(10,9,10,10,10,10,9,10,10,10) 
 
@@ -73,4 +73,3 @@ Fig2 <- ggplot(Feijao, aes(x = treatment, y = germination, fill = treatment)) +
   theme_classic(base_size = 16)
 
 plot_grid(Fig1, Fig2)
-
